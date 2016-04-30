@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void WrFi(APT* e,char* fname,int* m, int* sm)
+void WrFi(APT* e,char* fname,int* m, int* sm) //Запись в файл
 {
     fstream file;
     file.open(fname,ios_base::out | ios_base::trunc);
@@ -25,7 +25,7 @@ void WrFi(APT* e,char* fname,int* m, int* sm)
     }
 }
 
-APT* ReFi(APT* e,char* fname, int* m, int* sm)
+APT* ReFi(APT* e,char* fname, int* m, int* sm)  //Чтение из файла
 {
     fstream file;
     string a,b,c,d;

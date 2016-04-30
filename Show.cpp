@@ -1,5 +1,5 @@
 #include "main.h"
-using namespace std;
+using namespace std; //Вывод лекарств на экран
 
 
 

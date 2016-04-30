@@ -1,5 +1,5 @@
 #include "main.h"
-using namespace std;
+using namespace std; //Функция привоза лекарств в аптеку
 
 void privoz(APT* e, int* sm)
 
@@ -24,7 +24,7 @@ void privoz(APT* e, int* sm)
         }
         else {
             *sm=*sm-(i*e->j);
-            cout<<"Лекарства завезены.";
+            cout<<"Лекарства завезены.\n";
             e->x+=i;
             }
     }
@@ -36,7 +36,7 @@ void privoz(APT* e, int* sm)
 }
 
 
-void otvoz(APT* e,  int* sm)
+void otvoz(APT* e,  int* sm)  //Функция продажи лекарств
 {
     int n;
     int i;
@@ -52,13 +52,14 @@ void otvoz(APT* e,  int* sm)
             if (i>e->x)
             {
                 cout<<"У вас нет в наличии такого количества препарата.\n";
-                continue;\
+                continue;
 
             }
           else {
                 *sm=*sm+(i*e->j);
-                cout<<"Лекарства проданы.";
+                cout<<"Лекарства проданы.\n";
                 e->x-=i;
+                break;
             }
             if(e->next==NULL)
                 break;
